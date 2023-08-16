@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div class="main">
+        <div id="bgr">
+            <img src="./assets/img/background/background-restaurant.jpg" alt="" class="bgr-img">
+        </div>
+        <div class="content">
+            <div id="list-menu">
+                <p class="name">
+                    <button class="name-text js-menu-btn">menu</button>
+                </p>
+    
+                <p class="name">
+                    <button class="name-text js-contact-btn">contact</button>
+                </p>
+            </div>
+    
+            <div id="body-logo">
+                <p class="logo">logo</p>
+            </div>
+    
+            <div id="footer">
+                <p class="footer-time">monday - friday 10-23 | saturday 14-02</p>
+                <p class="footer-address">42 village St, New York</p>
+                <p class="footer-text">powered by <a href="">w3.css</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu js-menu">
+        <div class="menu-dish">
+            <div class="type-dish">
+                <h1 class="type-name">Starters</h1>
+            </div>
+
+            <div class="dish-close close js-close">
+                <i class="ti-close"></i>
+            </div>
+            <div class="name-dish">
+                <h5 class="dish">Tomato Soup <b>$2.50</b></h5>
+                <h5 class="dish">Chicken Salad <b>$3.50</b></h5>
+                <h5 class="dish">Bread and Butter <b>$1.00</b></h5>
+            </div>
+
+            <div class="type-dish">
+                <h1 class="type-name">Main Courses</h1>
+            </div>
+            <div class="name-dish">
+                <h5 class="dish">Grilled Fish and Potatoes <b>$8.50</b></h5>
+                <h5 class="dish">Italian Pizza <b>$5.50</b></h5>
+                <h5 class="dish">Veggie Pasta <b>$4.00</b></h5>
+                <h5 class="dish">Chicken and Potatoes <b>$6.50</b></h5>
+                <h5 class="dish">Deluxe <b>$5.00</b></h5>
+            </div>
+
+            <div class="type-dish">
+                <h1 class="type-name">Desserts</h1>
+            </div>
+            <div class="name-dish">
+                <h5 class="dish">Fruit Salad <b>$2.50</b></h5>
+                <h5 class="dish">Ice cream<b>$2.00</b></h5>
+                <h5 class="dish">Chocolate Cake <b>$4.00</b></h5>
+                <h5 class="dish">Cheese <b>$5.50</b></h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact js-contact">
+        <div class="contact-body">
+            <div class="contact-heading">
+                <p class="contact-name">Contact</p>
+            </div>
+
+            <div class="dish-close close js-close-contact">
+                <i class="ti-close"></i>
+            </div>
+
+            <div class="contact-sub-heading">
+                <div class="contact-sub-text">
+                    <p class="contact-text">Reserve a table, ask for today's special or just send us a message:</p>
+                </div>
+    
+                <form action="">
+                    <div class="form-name">
+                        <input type="text" required placeholder="Name" class="form-text">
+                    </div>
+    
+                    <div class="form-name">
+                        <input type="text" required placeholder="How many people" class="form-text">
+                    </div>
+    
+                    <div class="form-name">
+                        <input type="datetime-local" name="" required placeholder="Date and time" class="form-text" value="2023-08-14T14:44">
+                    </div>
+    
+                    <div class="form-name">
+                        <input type="text" required placeholder="Massage \ Special requirements" class="form-text">
+                    </div>
+
+                    <div class="form-btn">
+                        <button class="btn">SEND MESSAGE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menuBtn = document.querySelector('.js-menu-btn')
+        const menu = document.querySelector('.js-menu')
+        const menuClose = document.querySelector('.js-close')
+
+        function showMenu() {
+            menu.classList.add('open')
+        }
+
+        function hideMenu() {
+            menu.classList.remove('open')
+        }
+
+        menuBtn.addEventListener('click', showMenu)
+        menuClose.addEventListener('click', hideMenu)
+    </script>
+
+<script>
+    const contactBtn = document.querySelector('.js-contact-btn')
+    const contact = document.querySelector('.js-contact')
+    const contactClose = document.querySelector('.js-close-contact')
+
+    function showContact() {
+        contact.classList.add('open')
+    }
+
+    function hideContact() {
+        contact.classList.remove('open')
+    }
+
+    contactBtn.addEventListener('click', showContact)
+    contactClose.addEventListener('click', hideContact)
+</script>
+</body>
+</html>
